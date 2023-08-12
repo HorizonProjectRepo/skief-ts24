@@ -67,7 +67,7 @@ const Home = () => {
 
       <div className="max-w-xs md:flex">
         <img className="" src={ins1} alt="instructor" />
-        <img className="ml-0 lg:ml-64 " src={ins2} alt="instructor" />
+        <img className="ml-0 lg:ml-[300px] w-60" src={ins2} alt="instructor" />
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-5">
