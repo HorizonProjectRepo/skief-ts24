@@ -4,6 +4,7 @@ import img2 from "../assets/images/2.PNG";
 import img3 from "../assets/images/3.PNG";
 import img4 from "../assets/images/4.PNG";
 import img5 from "../assets/images/5.PNG";
+import hero from "../assets/images/hero.png";
 import ins1 from "../assets/images/ins1.PNG";
 import ins2 from "../assets/images/ins2.PNG";
 import logo1 from "../assets/images/logo1.PNG";
@@ -44,8 +45,8 @@ const Home = () => {
   ];
   return (
     <>
-      <section className="pt-28 pb-20">
-        <p className="text-2xl font-bold mb-3 text-[#001143]">
+      <section className="">
+        {/* <p className="text-2xl font-bold mb-3 text-[#001143]">
           VEJLE · DENMARK
         </p>
         <div className="flex items-center">
@@ -62,19 +63,20 @@ const Home = () => {
           <p className="ml-3 text-4xl lg:text-9xl font-bold">
             SKIEF <br /> TECHNICAL <br /> SEMINAR <br /> 24
           </p>
-        </div>
+        </div> */}
+        <img className="sm:max-w-5xl " src={hero} alt="hero" />
       </section>
 
       <div className="max-w-xs md:flex">
         <img className="" src={ins1} alt="instructor" />
-        <img className="ml-0 lg:ml-[300px] w-60" src={ins2} alt="instructor" />
+        <img className="ml-0 lg:ml-[300px] w-52 sm:w-60" src={ins2} alt="instructor" />
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-5">
+      <div className="grid grid-cols-1 lg:grid-cols-5 gap-2">
         {allData.map((data) => {
           return (
             <div className="mb-7 mx-auto">
-              <img className="mb-2 w-36" src={data.img} alt="" />
+              <img className="mb-2 w-full" src={data.img} alt="" />
               <h2 className="font-bold w-36">{data.name}</h2>
               <p>{data.title}</p>
             </div>
