@@ -119,11 +119,12 @@ const Home = () => {
           <div className="my-5">
             <p>
               To receive update notifications, please sign up here: <br />
-              <span className="font-semibold">http://skief-technicalseminar2024.dk</span>
+              <span className="font-semibold cursor-pointer">http://skief-technicalseminar2024.dk</span>
             </p>
           </div>
-          <div className="mt-20">
-            <p>Contact information: Carsten@skif.dk</p>
+          <div className="mt-20 flex">
+            <p>Contact information: </p>
+            <a href="mailto:carsten@skif.dk" className="ml-2 font-semibold">carsten@skif.dk</a>
           </div>
           <div className="my-14">
             <p className="font-semibold">
