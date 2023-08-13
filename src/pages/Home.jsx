@@ -32,12 +32,14 @@ const Home = () => {
     },
     {
       id: 4,
+      titleImg: ins2,
       img: img4,
       name: "Kancho Nobuaki Kanazawa",
       title: "8th dan",
     },
     {
       id: 5,
+      titleImg: " ",
       img: img5,
       name: "Shuseki Shihan Manabu Murakami",
       title: "8th dan",
@@ -63,16 +65,16 @@ const Home = () => {
           <p className="ml-3 text-4xl lg:text-9xl font-bold">
             SKIEF <br /> TECHNICAL <br /> SEMINAR <br /> 24
           </p>
-        </div> */}
+        </div> */} 
         <img className="sm:max-w-5xl " src={hero} alt="hero" />
       </section>
 
-      <div className="max-w-xs md:flex">
-        <img className="" src={ins1} alt="instructor" />
-        <img className="ml-0 lg:ml-[300px] w-52 sm:w-60" src={ins2} alt="instructor" />
+      <div className="max-w-xs md:flex ">
+        <img className="md:max-lg:relative md:max-lg:left-56 max-sm:relative max-sm:top-10 max-sm:left-8" src={ins1} alt="instructor" />
+        <img className="ml-0 lg:ml-[300px] w-56 sm:w-60 max-sm:relative max-sm:left-10 top-[87rem] sm:max-lg:relative sm:max-md:top-[88.25rem] sm:max-md:left-60 md:max-lg:top-[88rem] md:max-lg:right-20" src={ins2} alt="instructor" />
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-5 gap-2">
+      <div className="grid grid-cols-1 lg:grid-cols-5 gap-2 max-sm:gap-y-12 sm:max-lg:gap-y-14">
         {allData.map((data) => {
           return (
             <div className="mb-7 mx-auto">
