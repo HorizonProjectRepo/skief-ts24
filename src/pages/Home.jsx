@@ -66,7 +66,7 @@ const Home = () => {
             SKIEF <br /> TECHNICAL <br /> SEMINAR <br /> 24
           </p>
         </div> */} 
-        <img className="sm:max-w-5xl " src={hero} alt="hero" />
+        <img className="lg:max-w-5xl " src={hero} alt="hero" />
       </section>
 
       <div className="max-w-xs md:flex ">
@@ -152,6 +152,7 @@ const Home = () => {
           </p>
         </div>
       </div>
+      
       {/* <section className="flex flex-col lg:flex-row py-20">
         <div className="">
           <h2 className="font-bold text-xl">PRELIMINARY SCHEDULE</h2><br />
