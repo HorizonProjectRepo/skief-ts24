@@ -1,4 +1,5 @@
 import React from "react";
+import { Fade } from "react-awesome-reveal";
 import img1 from "../assets/images/1.PNG";
 import img2 from "../assets/images/2.PNG";
 import img3 from "../assets/images/3.PNG";
@@ -65,19 +66,15 @@ const Home = () => {
           <p className="ml-3 text-4xl lg:text-9xl font-bold">
             SKIEF <br /> TECHNICAL <br /> SEMINAR <br /> 24
           </p>
-        </div> */} 
-        <img className="lg:max-w-5xl " src={hero} alt="hero" data-aos="fade-down"
-     data-aos-easing="linear"
-     data-aos-duration="1000"/>
+        </div> */}
+        <Fade duration={5000}>
+          <img className="lg:max-w-5xl " src={hero} alt="hero"/>
+        </Fade> 
       </section>
 
       <div className="max-w-xs md:flex ">
-        <img className="md:max-lg:relative md:max-lg:left-56 max-sm:relative max-sm:top-10 max-sm:left-8" src={ins1} alt="instructor" data-aos="fade-right"
-     data-aos-easing="linear"
-     data-aos-duration="1000"/>
-        <img className="ml-0 lg:ml-[300px] w-56 sm:w-60 max-sm:relative max-sm:left-10 top-[87rem] sm:max-lg:relative sm:max-md:top-[88.25rem] sm:max-md:left-60 md:max-lg:top-[88rem] md:max-lg:right-20" src={ins2} alt="instructor" data-aos="fade-left"
-     data-aos-easing="linear"
-     data-aos-duration="1000"/>
+        <img className="md:max-lg:relative md:max-lg:left-56 max-sm:relative max-sm:top-10 max-sm:left-8" src={ins1} alt="instructor"/>
+        <img className="ml-0 lg:ml-[300px] w-56 sm:w-60 max-sm:relative max-sm:left-10 top-[87rem] sm:max-lg:relative sm:max-md:top-[88.25rem] sm:max-md:left-60 md:max-lg:top-[88rem] md:max-lg:right-20" src={ins2} alt="instructor" />
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-2 max-sm:gap-y-12 sm:max-lg:gap-y-14">
@@ -93,9 +90,7 @@ const Home = () => {
       </div>
 
       <div className="grid lg:grid-cols-6 gap-8 my-20 px-4 lg:px-0">
-        <div className="col-span-2 font-thin" data-aos="fade-right"
-     data-aos-easing="linear"
-     data-aos-duration="1000">
+        <div className="col-span-2 font-thin">
           <p className="h-16 font-bold">PRELIMINARY SCHEDULE</p>
           <div className="grid grid-cols-2">
             <p>Thursday 10th:</p>
@@ -118,9 +113,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="col-span-3 font-thin" data-aos="fade-up"
-     data-aos-easing="linear"
-     data-aos-duration="1000">
+        <div className="col-span-3 font-thin">
           <p className="h-16 font-bold">INFORMATION WILL BE UPDATED CONTINOUSLY</p>
           <div className="">
             <p>
@@ -146,9 +139,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="col-span-2 sm:col-span-1 mx-auto" data-aos="fade-left"
-     data-aos-easing="linear"
-     data-aos-duration="1000">
+        <div className="col-span-2 sm:col-span-1 mx-auto">
           <img className="w-24 -mt-10 sm:mt-6" src={logo2} alt="" />
           <img className="w-24 mt-6" src={logo1} alt="" />
         </div>
