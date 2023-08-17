@@ -67,28 +67,30 @@ const Home = () => {
             SKIEF <br /> TECHNICAL <br /> SEMINAR <br /> 24
           </p>
         </div> */}
-        <Fade duration={5000}>
+        <Fade duration={3000}>
           <img className="lg:max-w-5xl " src={hero} alt="hero"/>
         </Fade> 
       </section>
 
       <div className="max-w-xs md:flex ">
         <img className="md:max-lg:relative md:max-lg:left-56 max-sm:relative max-sm:top-10 max-sm:left-8" src={ins1} alt="instructor"/>
+
         <img className="ml-0 lg:ml-[300px] w-56 sm:w-60 max-sm:relative max-sm:left-10 top-[87rem] sm:max-lg:relative sm:max-md:top-[88.25rem] sm:max-md:left-60 md:max-lg:top-[88rem] md:max-lg:right-20" src={ins2} alt="instructor" />
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-2 max-sm:gap-y-12 sm:max-lg:gap-y-14">
         {allData.map((data) => {
           return (
-            <div className="mb-7 mx-auto">
-              <img className="mb-2 w-full" src={data.img} alt="" />
-              <h2 className="font-bold w-36">{data.name}</h2>
-              <p>{data.title}</p>
-            </div>
+              <div className="mb-7 mx-auto">
+                <img className="mb-2 w-full" src={data.img} alt="" />
+                <h2 className="font-bold w-36">{data.name}</h2>
+                <p>{data.title}</p>
+              </div>
           );
         })}
       </div>
 
+      <Fade duration={2000}>
       <div className="grid lg:grid-cols-6 gap-8 my-20 px-4 lg:px-0">
         <div className="col-span-2 font-thin">
           <p className="h-16 font-bold">PRELIMINARY SCHEDULE</p>
@@ -144,6 +146,7 @@ const Home = () => {
           <img className="w-24 mt-6" src={logo1} alt="" />
         </div>
       </div>
+      </Fade>
 
       <div class="py-10 border-t-2 border-gray-900 lg:px-0">
         <div class="flex items-center flex-col md:flex-row gap-3 max-sm:pl-2 mx-auto justify-center">
