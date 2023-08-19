@@ -75,7 +75,7 @@ const Home = () => {
       <div className="max-w-xs md:flex ">
         <img className="md:max-lg:relative md:max-lg:left-56 max-sm:relative max-sm:top-10 max-sm:left-8" src={ins1} alt="instructor"/>
 
-        <img className="ml-0 lg:ml-[300px] w-56 sm:w-60 max-sm:relative max-sm:left-10 top-[87rem] sm:max-lg:relative sm:max-md:top-[88.25rem] sm:max-md:left-60 md:max-lg:top-[88rem] md:max-lg:right-20" src={ins2} alt="instructor" />
+        <img className="ml-0 lg:ml-[300px] w-56 sm:w-60 max-sm:relative max-sm:left-10 max-sm:top-[86.5rem] sm:max-lg:relative sm:max-md:top-[88.25rem] sm:max-md:left-60 md:max-lg:top-[88rem] md:max-lg:right-20" src={ins2} alt="instructor" />
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-2 max-sm:gap-y-12 sm:max-lg:gap-y-14">
@@ -90,7 +90,7 @@ const Home = () => {
         })}
       </div>
 
-      <Fade duration={2000}>
+      <Fade duration={1000}>
       <div className="grid lg:grid-cols-6 gap-8 my-20 px-4 lg:px-0">
         <div className="col-span-2 font-thin">
           <p className="h-16 font-bold">PRELIMINARY SCHEDULE</p>
