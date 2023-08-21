@@ -130,7 +130,7 @@ const Home = () => {
             </p>
           </div>
           <div className="mt-20 flex">
-            <p>Contact information: </p>
+            <p>Contact information:</p>
             <a href="mailto:carsten@skif.dk" className="ml-2 font-semibold">carsten@skif.dk</a>
           </div>
           <div className="my-14">
