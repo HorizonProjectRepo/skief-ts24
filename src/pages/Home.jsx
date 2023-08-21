@@ -92,7 +92,7 @@ const Home = () => {
 
       <Fade duration={1000}>
       <div className="grid lg:grid-cols-6 gap-8 my-20 px-4 lg:px-0">
-        <div className="col-span-2 font-thin">
+        <div className="col-span-2 font-semibold sm:font-thin">
           <p className="h-16 font-bold">PRELIMINARY SCHEDULE</p>
           <div className="grid grid-cols-2">
             <p>Thursday 10th:</p>
@@ -115,7 +115,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="col-span-3 font-thin">
+        <div className="col-span-3 font-base sm:font-thin">
           <p className="h-16 font-bold">INFORMATION WILL BE UPDATED CONTINOUSLY</p>
           <div className="">
             <p>
