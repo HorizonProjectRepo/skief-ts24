@@ -14,16 +14,17 @@ import logo2 from "../assets/images/logo2.png";
 const Home = () => {
   const allData = [
     {
+      
       id: 1,
-      img: img1,
-      name: "Shihan Masaru Miura",
-      title: "9th dan, Italiy",
-    },
-    {
-      id: 2,
       img: img2,
       name: "Shihan Shiro Asano",
       title: "9th dan, UK1",
+    },
+    {
+      id: 2,
+      img: img1,
+      name: "Shihan Masaru Miura",
+      title: "9th dan, Italiy",
     },
     {
       id: 3,
