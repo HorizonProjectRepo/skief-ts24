@@ -137,7 +137,7 @@ const Home = () => {
             <p>Contact information:</p>
             <a href="mailto:carsten@skif.dk" className="ml-2 font-semibold">carsten@skif.dk</a>
           </div>
-          <div className="my-14">
+          <div className="my-20">
             <p className="font-semibold">
               Venue address: <br /> DGI Huset Vejle, Willy Sørensens Plads 5, 7100
               Vejle, Denmark
