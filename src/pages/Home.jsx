@@ -92,27 +92,30 @@ const Home = () => {
       </div>
 
       <Fade duration={1000}>
-      <div className="grid lg:grid-cols-6 gap-8 my-20 px-4 lg:px-0">
-        <div className="col-span-2 font-semibold sm:font-thin">
+      <div className="grid lg:grid-cols-7 gap-10 my-20 px-4 lg:px-0">
+        <div className="col-span-3 font-semibold sm:font-thin">
           <p className="h-16 font-bold">PRELIMINARY SCHEDULE</p>
-          <div className="grid grid-cols-2">
+          <div className="grid grid-cols-3">
             <p>Thursday 10th:</p>
-            <p>Referee Clinic</p>
+            <p className="col-span-2">Referee Clinic</p>
           </div>
-          <div className="grid grid-cols-2 mt-12">
+          <div className="grid grid-cols-3 mt-[4.2rem]">
             <p>Friday 11th:</p>
-            <p className="">
-              Referee Clinic continued Technical Seminar BOD meeting and General
-              assembly
+            <p className="col-span-2">
+              Referee Clinic continued <br />
+              Technical Seminar <br /> 
+              BOD meeting and General assembly
             </p>
           </div>
-          <div className="grid grid-cols-2 mt-7">
+          <div className="grid grid-cols-3 mt-7">
             <p>Saturday 12th:</p>
-            <p className="">Technical Seminar Dan grading Party</p>
+            <p className="col-span-2">Technical Seminar <br />
+            Dan grading <br /> 
+            Party</p>
           </div>
-          <div className="grid grid-cols-2 my-8">
+          <div className="grid grid-cols-3 my-8">
             <p>Sunday 13th:</p>
-            <p className="">Technical Seminar</p>
+            <p className="col-span-2">Technical Seminar</p>
           </div>
         </div>
 
@@ -130,7 +133,7 @@ const Home = () => {
               <span className="font-semibold cursor-pointer">http://skief-technicalseminar2024.dk</span>
             </p>
           </div>
-          <div className="mt-20 flex">
+          <div className="mt-[3.2rem] flex">
             <p>Contact information:</p>
             <a href="mailto:carsten@skif.dk" className="ml-2 font-semibold">carsten@skif.dk</a>
           </div>
@@ -142,7 +145,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="col-span-2 sm:col-span-1 mx-auto">
+        <div className="col-span-3 lg:col-span-1 mx-auto">
           <img className="w-24 -mt-10 sm:mt-6" src={logo2} alt="" />
           <img className="w-24 mt-6" src={logo1} alt="" />
         </div>
