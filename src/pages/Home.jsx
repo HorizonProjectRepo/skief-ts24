@@ -72,36 +72,65 @@ const Home = () => {
         </Fade>
       </section>
 
+      {/* Instructor 1 */}
       <section>
         <div className="max-w-xs mb-8">
           <img className="" src={ins1} alt="instructor" />
-
-          {/* <img className="ml-0 lg:ml-[300px] w-56 sm:w-60 max-sm:relative max-sm:left-10 max-sm:top-[86.5rem] sm:max-lg:relative sm:max-md:top-[88.25rem] sm:max-md:left-60 md:max-lg:top-[88rem] md:max-lg:right-20" src={ins2} alt="instructor" /> */}
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-2 max-sm:gap-y-12 sm:max-lg:gap-y-14">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-12 gap-4">
           {allData.slice(0, 3).map((data) => {
             return (
               <div className="mb-7 mx-auto" key={data.id}>
                 <Zoom>
                   <img
-                    className="mb-4 w-full transition-transform hover:-translate-y-4 hover:shadow-blue-950 hover:shadow-lg "
+                    className="mb-4 w-full transition-transform hover:-translate-y-4 hover:shadow-blue-950 hover:shadow-lg rounded-xl
+                    "
                     src={data.img}
                     width={220}
                     height={220}
-                    alt="sensei"
+                    alt={data.title
+                    }
                   />
                 </Zoom>
-                <h2 className="font-bold w-36">{data.name}</h2>
-                <p>{data.title}</p>
+                <h2 className="text-xl w-36">{data.name}</h2>
+                <p className="font-semibold text-lg text-blue-950">{data.title}</p>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+      
+      {/* Instructor 2 */}
+      <section className="mt-10">
+        <div className="max-w-[300px] mb-8">
+          <img className="" src={ins2} alt="instructor 2" />
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-12 gap-4">
+          {allData.slice(3).map((data) => {
+            return (
+              <div className="mb-7 mx-auto" key={data.id}>
+                <Zoom>
+                  <img
+                    className="mb-4 w-full transition-transform hover:-translate-y-4 hover:shadow-blue-950 hover:shadow-lg rounded-xl
+                    "
+                    src={data.img}
+                    width={220}
+                    height={220}
+                    alt={data.title}
+                  />
+                </Zoom>
+                <h2 className="text-xl w-44">{data.name}</h2>
+                <p className="font-semibold text-lg text-blue-950">{data.title}</p>
               </div>
             );
           })}
         </div>
       </section>
 
-      <Fade duration={1000}>
-        <div className="grid lg:grid-cols-7 gap-10 my-20 px-4 lg:px-0">
+      <Fade duration={1500} direction="left">
+        <div className="grid lg:grid-cols-7 gap-10 sm:my-20 my-8 px-4 lg:px-0">
           <div className="col-span-3 font-semibold sm:font-thin">
             <p className="h-16 font-bold">PRELIMINARY SCHEDULE</p>
             <div className="grid grid-cols-3">
