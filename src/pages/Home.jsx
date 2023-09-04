@@ -1,5 +1,5 @@
 import React from "react";
-import { Fade, Zoom } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 import img1 from "../assets/images/1.PNG";
 import img2 from "../assets/images/2.PNG";
 import img3 from "../assets/images/3.PNG";
@@ -67,7 +67,7 @@ const Home = () => {
             SKIEF <br /> TECHNICAL <br /> SEMINAR <br /> 24
           </p>
         </div> */}
-        <Fade duration={2000} direction="left">
+        <Fade duration={2500} direction="left">
           <img className="lg:max-w-5xl " src={hero} alt="hero" />
         </Fade>
       </section>
@@ -82,7 +82,7 @@ const Home = () => {
           {allData.slice(0, 3).map((data) => {
             return (
               <div className="mb-7 mx-auto" key={data.id}>
-                <Zoom>
+                <Fade duration={1500} direction="left">
                   <img
                     className="mb-4 w-full transition-transform hover:-translate-y-4 hover:shadow-blue-950 hover:shadow-lg rounded-xl
                     "
@@ -92,9 +92,9 @@ const Home = () => {
                     alt={data.title
                     }
                   />
-                </Zoom>
                 <h2 className="text-xl w-36">{data.name}</h2>
                 <p className="font-semibold text-lg text-blue-950">{data.title}</p>
+                </Fade>
               </div>
             );
           })}
@@ -111,7 +111,7 @@ const Home = () => {
           {allData.slice(3).map((data) => {
             return (
               <div className="mb-7 mx-auto" key={data.id}>
-                <Zoom>
+                <Fade duration={1500} direction="right">
                   <img
                     className="mb-4 w-full transition-transform hover:-translate-y-4 hover:shadow-blue-950 hover:shadow-lg rounded-xl
                     "
@@ -120,16 +120,16 @@ const Home = () => {
                     height={220}
                     alt={data.title}
                   />
-                </Zoom>
                 <h2 className="text-xl w-44">{data.name}</h2>
                 <p className="font-semibold text-lg text-blue-950">{data.title}</p>
+                </Fade>
               </div>
             );
           })}
         </div>
       </section>
 
-      <Fade duration={1500} direction="left">
+      <Fade duration={2000} direction="left">
         <div className="grid lg:grid-cols-7 gap-10 sm:my-20 my-8 px-4 lg:px-0">
           <div className="col-span-3 font-semibold sm:font-thin">
             <p className="h-16 font-bold">PRELIMINARY SCHEDULE</p>
