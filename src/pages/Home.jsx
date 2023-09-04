@@ -10,6 +10,7 @@ import ins1 from "../assets/images/ins1.PNG";
 import ins2 from "../assets/images/ins2.PNG";
 import logo1 from "../assets/images/logo1.PNG";
 import logo2 from "../assets/images/logo2.png";
+import NewsLetter from "../components/NewsLetter";
 
 const Home = () => {
   const allData = [
@@ -89,18 +90,19 @@ const Home = () => {
                     src={data.img}
                     width={220}
                     height={220}
-                    alt={data.title
-                    }
+                    alt={data.title}
                   />
-                <h2 className="text-xl w-36">{data.name}</h2>
-                <p className="font-semibold text-lg text-blue-950">{data.title}</p>
+                  <h2 className="text-xl w-36">{data.name}</h2>
+                  <p className="font-semibold text-lg text-blue-950">
+                    {data.title}
+                  </p>
                 </Fade>
               </div>
             );
           })}
         </div>
       </section>
-      
+
       {/* Instructor 2 */}
       <section className="mt-10">
         <div className="max-w-[300px] mb-8">
@@ -120,8 +122,10 @@ const Home = () => {
                     height={220}
                     alt={data.title}
                   />
-                <h2 className="text-xl w-44">{data.name}</h2>
-                <p className="font-semibold text-lg text-blue-950">{data.title}</p>
+                  <h2 className="text-xl w-44">{data.name}</h2>
+                  <p className="font-semibold text-lg text-blue-950">
+                    {data.title}
+                  </p>
                 </Fade>
               </div>
             );
@@ -129,10 +133,19 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Subscription area */}
+      <section className="mt-16">
+        <Fade direction="down" duration={2000}>
+          <div className=" mx-auto w-[70%] rounded-xl shadow-2xl shadow-blue-950 p-6">
+            <NewsLetter />
+          </div>
+        </Fade>
+      </section>
+
       <Fade duration={2000} direction="left">
         <div className="grid lg:grid-cols-7 gap-10 sm:my-20 my-8 px-4 lg:px-0">
           <div className="col-span-3 font-semibold sm:font-thin">
-            <p className="h-16 font-bold">PRELIMINARY SCHEDULE</p>
+            <p className="h-16 font-bold text-md">PRELIMINARY SCHEDULE</p>
             <div className="grid grid-cols-3">
               <p>Thursday 10th:</p>
               <p className="col-span-2">Referee Clinic</p>
@@ -160,7 +173,7 @@ const Home = () => {
           </div>
 
           <div className="col-span-3 font-base sm:font-thin">
-            <p className="h-16 font-bold">
+            <p className="h-16 font-bold text-md">
               INFORMATION WILL BE UPDATED CONTINOUSLY
             </p>
             <div className="">
