@@ -132,18 +132,10 @@ const Home = () => {
           })}
         </div>
       </section>
-
-      {/* Subscription area */}
-      <section className="mt-16">
-        <Fade direction="down" duration={2000}>
-          <div className=" mx-auto w-[70%] rounded-xl shadow-2xl shadow-blue-950 p-6">
-            <NewsLetter />
-          </div>
-        </Fade>
-      </section>
-
+      
+      {/* Venue area */}
       <Fade duration={2000} direction="left">
-        <div className="grid lg:grid-cols-7 gap-10 sm:my-20 my-8 px-4 lg:px-0">
+        <div className="grid lg:grid-cols-7 gap-10 sm:mt-20 my-8 px-4 lg:px-0">
           <div className="col-span-3 font-semibold sm:font-thin">
             <p className="h-16 font-bold text-md">PRELIMINARY SCHEDULE</p>
             <div className="grid grid-cols-3">
@@ -210,6 +202,15 @@ const Home = () => {
           </div>
         </div>
       </Fade>
+
+      {/* Subscription area */}
+      <section className="mb-16">
+        <Fade direction="down" duration={2000}>
+          <div className=" mx-auto w-[70%] rounded-xl shadow-3xl shadow-blue-950 p-6">
+            <NewsLetter />
+          </div>
+        </Fade>
+      </section>
 
       <div class="py-10 border-t-2 border-gray-900 lg:px-0">
         <div class="flex items-center flex-col md:flex-row gap-3 max-sm:pl-2 mx-auto justify-center">
