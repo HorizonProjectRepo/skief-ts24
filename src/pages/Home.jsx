@@ -1,3 +1,4 @@
+import { Button } from "@mui/joy";
 import React from "react";
 import { Fade } from "react-awesome-reveal";
 import img1 from "../assets/images/1.PNG";
@@ -49,7 +50,7 @@ const Home = () => {
   ];
   return (
     <>
-      <section className="">
+      <section className="flex items-center flex-col lg:flex-row">
         {/* <p className="text-2xl font-bold mb-3 text-[#001143]">
           VEJLE · DENMARK
         </p>
@@ -68,9 +69,21 @@ const Home = () => {
             SKIEF <br /> TECHNICAL <br /> SEMINAR <br /> 24
           </p>
         </div> */}
-        <Fade duration={2500} direction="left">
-          <img className="lg:max-w-5xl " src={hero} alt="hero" />
+        <div className="flex-1 max-w-fit">
+          <Fade duration={2000} direction="left">
+            <img className="w-24 sm:w-32" src={logo2} alt="" />
+          </Fade>
+        </div>
+        <div className="flex-1">
+          <Fade duration={1500} direction="down">
+          <img className="" src={hero} alt="hero" />
         </Fade>
+        </div>
+        <div className="flex-1 max-w-fit">
+          <Fade duration={2000} direction="right">
+            <img className="w-24 sm:w-32" src={logo1} alt="" />
+          </Fade>
+        </div>
       </section>
 
       {/* Instructor 1 */}
@@ -175,14 +188,18 @@ const Home = () => {
               </p>
             </div>
             <div className="my-5">
-              <p>
-                To receive update notifications, please sign up here: <br />
-                <span className="font-semibold cursor-pointer">
-                  http://skief-technicalseminar2024.dk
-                </span>
+              <p className="mb-2">
+                <a 
+                  href="https://www.skief-referee.com/about" target="_blank" 
+                  rel="noopener noreferrer" className="font-semibold hover:text-blue-950">https://www.skief-referee.com/about</a>
               </p>
+              <Button 
+                color="primary"
+                variant="soft"
+                size="sm"
+                onClick={() => (window.alert("Booking service will be added soon!!"))}>Book Your Hotel</Button>
             </div>
-            <div className="mt-[3.2rem] flex">
+            <div className="mt-[2.2rem] flex">
               <p>Contact information:</p>
               <a href="mailto:carsten@skif.dk" className="ml-2 font-semibold">
                 carsten@skif.dk

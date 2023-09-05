@@ -49,17 +49,22 @@ const NewsLetter = () => {
             <div role="group" aria-labelledby="sandwich-group">
               <List size="sm">
                 <ListItem>
-                  <Checkbox label="Referee" color="primary" variant="soft" />
+                  <Checkbox label="Referee" color="primary" variant="soft" 
+                  style={{color:"rgb(23 37 84)", fontWeight:"500"}}
+                  />
                 </ListItem>
                 <ListItem>
                   <Checkbox
                     label="Country Representative"
                     color="primary"
                     variant="soft"
+                    style={{color:"rgb(23 37 84)", fontWeight:"500"}}
                   />
                 </ListItem>
                 <ListItem>
-                  <Checkbox label="Others" color="primary" variant="soft" />
+                  <Checkbox label="Others" color="primary" variant="soft" 
+                  style={{color:"rgb(23 37 84)",fontWeight:"500"}}
+                  />
                 </ListItem>
               </List>
             </div>
@@ -76,11 +81,9 @@ const NewsLetter = () => {
         <iframe
           title="venu map"
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8991.868223120673!2d9.5180556!3d55.7069444!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c825c06efa945%3A0xbea002bd0b4e2a96!2sDGI%20Huset%20Vejle!5e0!3m2!1sen!2sbd!4v1693902257627!5m2!1sen!2sbd"
-          width="380"
-          height="280"
           allowfullscreen=""
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade" className="rounded-xl hover:shadow-lg hover:shadow-blue-300"
+          referrerpolicy="no-referrer-when-downgrade" className="rounded-xl hover:shadow-lg hover:shadow-blue-300 sm:w-[380px] sm:h-[280px]"
         ></iframe>
       </div>
     </div>
