@@ -191,12 +191,14 @@ const Home = () => {
 
             <div className="mt-10 flex flex-col  items-start gap-2">
               
-              <Button 
-                color="primary"
-                variant="soft"
-                size="sm" className="mb-6">
-                  SKIEF Referee Committe
-              </Button>
+              <a href="https://www.skief-referee.com/about" target="_blank" rel="noreferrer">
+                <Button 
+                  color="primary"
+                  variant="soft"
+                  size="sm" className="mb-6">
+                    SKIEF Referee Committe
+                </Button>
+              </a>
 
               <Button 
                 color="primary"
