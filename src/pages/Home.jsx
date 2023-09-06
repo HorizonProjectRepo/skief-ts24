@@ -148,7 +148,8 @@ const Home = () => {
       
       {/* Venue area */}
       <Fade duration={2000} direction="left">
-        <div className="grid lg:grid-cols-7 gap-10 sm:mt-20 my-8 px-4 lg:px-0">
+        <div className="grid lg:grid-cols-6 gap-10 sm:mt-20 my-8 px-4 lg:px-0">
+
           <div className="col-span-3 font-semibold sm:font-thin">
             <p className="h-16 font-bold text-md">PRELIMINARY SCHEDULE</p>
             <div className="grid grid-cols-3">
@@ -213,10 +214,10 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="col-span-3 lg:col-span-1 mx-auto">
+          {/* <div className="col-span-3 lg:col-span-1 mx-auto">
             <img className="w-24 -mt-10 sm:mt-6" src={logo2} alt="" />
             <img className="w-24 mt-6" src={logo1} alt="" />
-          </div>
+          </div> */}
         </div>
       </Fade>
 
