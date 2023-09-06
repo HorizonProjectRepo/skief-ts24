@@ -188,25 +188,32 @@ const Home = () => {
                 info, signup and more information will be part of the updates.:
               </p>
             </div>
-            <div className="my-5">
-              <p className="mb-2">
-                <a 
-                  href="https://www.skief-referee.com/about" target="_blank" 
-                  rel="noopener noreferrer" className="font-semibold hover:text-blue-950">https://www.skief-referee.com/about</a>
-              </p>
+
+            <div className="mt-10 flex flex-col  items-start gap-2">
+              
+              <Button 
+                color="primary"
+                variant="soft"
+                size="sm" className="mb-6">
+                  SKIEF Referee Committe
+              </Button>
+
               <Button 
                 color="primary"
                 variant="soft"
                 size="sm"
-                onClick={() => (window.alert("Booking service will be added soon!!"))}>Book Your Hotel</Button>
+                onClick={() => (window.alert("Booking service will be added soon!!"))}>
+                  Book Your Hotel
+              </Button>
             </div>
+
             <div className="mt-[2.2rem] flex">
               <p>Contact information:</p>
               <a href="mailto:carsten@skif.dk" className="ml-2 font-semibold">
                 carsten@skif.dk
               </a>
             </div>
-            <div className="my-20">
+            <div className="my-16">
               <p className="font-semibold">
                 Venue address: <br /> DGI Huset Vejle, Willy Sørensens Plads 5,
                 7100 Vejle, Denmark
@@ -214,10 +221,6 @@ const Home = () => {
             </div>
           </div>
 
-          {/* <div className="col-span-3 lg:col-span-1 mx-auto">
-            <img className="w-24 -mt-10 sm:mt-6" src={logo2} alt="" />
-            <img className="w-24 mt-6" src={logo1} alt="" />
-          </div> */}
         </div>
       </Fade>
 
