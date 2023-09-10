@@ -78,9 +78,9 @@ const NewsLetter = () => {
               Your Role As:
             </Typography>
 
-            <input type="checkbox" name="referee" label="Referee" value="referee"/> Referee <br />
-            <input type="checkbox" name="cr" label="Referee" value="cr"/> Country Representative <br />
-            <input type="checkbox" name="others" label="Referee" value="others"/> Others
+            <input type="checkbox" name="referee" label="Referee" value="Referee"/> Referee <br />
+            <input type="checkbox" name="cr" label="Referee" value="Country Representative"/> Country Representative <br />
+            <input type="checkbox" name="others" label="Referee" value="Others"/> Others
             
 
             <Stack alignItems="center" mt={1}>
