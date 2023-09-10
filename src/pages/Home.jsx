@@ -69,7 +69,7 @@ const Home = () => {
             SKIEF <br /> TECHNICAL <br /> SEMINAR <br /> 24
           </p>
         </div> */}
-        <div className="flex-1 max-w-fit">
+        <div className="flex-1 max-w-fit max-md:hidden">
           <Fade duration={2000} direction="left">
             <img className="w-24 sm:w-32" src={logo2} alt="" />
           </Fade>
@@ -79,11 +79,28 @@ const Home = () => {
           <img className="" src={hero} alt="hero" />
         </Fade>
         </div>
-        <div className="flex-1 max-w-fit">
-          <Fade duration={2000} direction="right">
-            <img className="w-24 sm:w-32" src={logo1} alt="" />
-          </Fade>
+
+        {/* only for mobile device */}
+        <div className="flex flex-row gap-4 md:hidden">
+          <div className="">
+            <Fade duration={2000} direction="left">
+              <img className="w-24 sm:w-32" src={logo2} alt="" />
+            </Fade>
+          </div>
+          <div className="">
+            <Fade duration={2000} direction="right">
+              <img className="w-24 sm:w-32" src={logo1} alt="" />
+            </Fade>
+          </div>
         </div>
+        {/* only for mobile device */}
+
+        <div className="max-md:hidden">
+            <Fade duration={2000} direction="right">
+              <img className="w-24 sm:w-32" src={logo1} alt="" />
+            </Fade>
+          </div>
+        
       </section>
 
       {/* Instructor 1 */}
@@ -153,11 +170,11 @@ const Home = () => {
           <div className="col-span-3 font-semibold sm:font-thin">
             <p className="h-16 font-bold text-md">PRELIMINARY SCHEDULE</p>
             <div className="grid grid-cols-3">
-              <p>Thursday 10th:</p>
+              <p>Thursday 10th October, 2024:</p>
               <p className="col-span-2">Referee Clinic</p>
             </div>
             <div className="grid grid-cols-3 mt-[4.2rem]">
-              <p>Friday 11th:</p>
+              <p>Friday 11th October, 2024:</p>
               <p className="col-span-2">
                 Referee Clinic continued <br />
                 Technical Seminar <br />
@@ -165,7 +182,7 @@ const Home = () => {
               </p>
             </div>
             <div className="grid grid-cols-3 mt-7">
-              <p>Saturday 12th:</p>
+              <p>Saturday 12th October, 2024:</p>
               <p className="col-span-2">
                 Technical Seminar <br />
                 Dan grading <br />
@@ -173,7 +190,7 @@ const Home = () => {
               </p>
             </div>
             <div className="grid grid-cols-3 my-8">
-              <p>Sunday 13th:</p>
+              <p>Sunday 13th October, 2024:</p>
               <p className="col-span-2">Technical Seminar</p>
             </div>
           </div>
@@ -185,11 +202,11 @@ const Home = () => {
             <div className="">
               <p>
                 Information like Accommodation options and possibilities, travel
-                info, signup and more information will be part of the updates.:
+                info, signup and more information will be part of the updates.
               </p>
             </div>
 
-            <div className="mt-10 flex flex-col  items-start gap-2">
+            <div className="mt-16 flex flex-col  items-start gap-2">
               
               <a href="https://www.skief-referee.com/about" target="_blank" rel="noreferrer">
                 <Button 
