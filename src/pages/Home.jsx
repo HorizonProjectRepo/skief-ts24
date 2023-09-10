@@ -170,11 +170,11 @@ const Home = () => {
           <div className="col-span-3 font-semibold sm:font-thin">
             <p className="h-16 font-bold text-md">PRELIMINARY SCHEDULE</p>
             <div className="grid grid-cols-3">
-              <p>Thursday 10th October, 2024:</p>
+              <p>Thursday, 10th Oct'24:</p>
               <p className="col-span-2">Referee Clinic</p>
             </div>
             <div className="grid grid-cols-3 mt-[4.2rem]">
-              <p>Friday 11th October, 2024:</p>
+              <p>Friday, 11th Oct'24:</p>
               <p className="col-span-2">
                 Referee Clinic continued <br />
                 Technical Seminar <br />
@@ -182,7 +182,7 @@ const Home = () => {
               </p>
             </div>
             <div className="grid grid-cols-3 mt-7">
-              <p>Saturday 12th October, 2024:</p>
+              <p>Saturday, 12th Oct'24:</p>
               <p className="col-span-2">
                 Technical Seminar <br />
                 Dan grading <br />
@@ -190,7 +190,7 @@ const Home = () => {
               </p>
             </div>
             <div className="grid grid-cols-3 my-8">
-              <p>Sunday 13th October, 2024:</p>
+              <p>Sunday, 13th Oct'24:</p>
               <p className="col-span-2">Technical Seminar</p>
             </div>
           </div>
