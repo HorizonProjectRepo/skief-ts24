@@ -11,6 +11,7 @@ import ins1 from "../assets/images/ins1.PNG";
 import ins2 from "../assets/images/ins2.PNG";
 import logo1 from "../assets/images/logo1.PNG";
 import logo2 from "../assets/images/logo2.png";
+import arrow from "../assets/images/ra.png";
 import NewsLetter from "../components/NewsLetter";
 
 const Home = () => {
@@ -165,23 +166,32 @@ const Home = () => {
       
       {/* Venue area */}
       <Fade duration={2000} direction="left">
-        <div className="grid lg:grid-cols-6 gap-10 sm:mt-20 my-8 px-4 lg:px-0">
+        <div className="grid lg:grid-cols-6 gap-4 sm:mt-20 sm:mb-24 px-4 lg:px-0">
 
-          <div className="col-span-3 font-semibold sm:font-thin">
-            <p className="h-16 font-bold text-md">PRELIMINARY SCHEDULE</p>
+          <div className="col-span-3  ">
+            <p className="h-16 font-bold text-lg">PRELIMINARY SCHEDULE</p>
             <div className="grid grid-cols-3">
               <p>Thursday, 10th Oct'24:</p>
               <p className="col-span-2">Referee Clinic</p>
             </div>
             <div className="grid grid-cols-3 mt-[4.2rem]">
               <p>Friday, 11th Oct'24:</p>
-              <p className="col-span-2">
-                Referee Clinic continued <br />
-                Technical Seminar <br />
-                BOD meeting and General assembly
-              </p>
+              <div className="col-span-2">
+                <div className="flex items-center ">
+                  <img src={arrow} alt="arrow" width={24} height={24}/>
+                  <p>Referee Clinic continued</p>
+                </div>
+                <div className="flex items-center ">
+                  <img src={arrow} alt="arrow" width={24} height={24}/>
+                  <p>Technical Seminar</p>
+                </div>
+                <div className="flex items-center ">
+                  <img src={arrow} alt="arrow" width={24} height={24}/>
+                  <p>BOD meeting and General assembly</p>
+                </div>
+              </div>
             </div>
-            <div className="grid grid-cols-3 mt-7">
+            <div className="grid grid-cols-3 mt-10">
               <p>Saturday, 12th Oct'24:</p>
               <p className="col-span-2">
                 Technical Seminar <br />
@@ -195,18 +205,18 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="col-span-3 font-base sm:font-thin">
-            <p className="h-16 font-bold text-md">
+          <div className="col-span-3">
+            <p className="h-16 font-bold text-lg">
               INFORMATION WILL BE UPDATED CONTINOUSLY
             </p>
             <div className="">
               <p>
                 Information like Accommodation options and possibilities, travel
-                info, signup and more information will be part of the updates.
+                info and more information will be part of the updates.
               </p>
             </div>
 
-            <div className="mt-16 flex flex-col  items-start gap-2">
+            <div className="mt-12 flex flex-col  items-start gap-2">
               
               <a href="https://www.skief-referee.com/about" target="_blank" rel="noreferrer">
                 <Button 
@@ -228,11 +238,11 @@ const Home = () => {
 
             <div className="mt-[2.2rem] flex">
               <p>Contact information:</p>
-              <a href="mailto:carsten@skif.dk" className="ml-2 font-semibold">
+              <a href="mailto:carsten@skif.dk" className="ml-2 font-semibold ">
                 carsten@skif.dk
               </a>
             </div>
-            <div className="my-16">
+            <div className="mt-14">
               <p className="font-semibold">
                 Venue address: <br /> DGI Huset Vejle, Willy Sørensens Plads 5,
                 7100 Vejle, Denmark
