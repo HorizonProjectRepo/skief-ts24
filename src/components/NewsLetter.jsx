@@ -1,109 +1,84 @@
-import emailjs from "@emailjs/browser";
-import {
-  Button,
-  Input,
-  Stack,
-  Typography
-} from "@mui/joy";
-import React, { useRef } from "react";
+import axios from 'axios';
+import React, { useState } from 'react';
 
-const NewsLetter = () => {
-  const form = useRef();
+const NewLetter = () => {
+  const [email, setEmail] = useState('');
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
 
-  const sendEmail = (e) => {
-    e.preventDefault();
 
-    // Add the checkbox values to the form data
-    const formData = new FormData(form.current);
-    formData.append("referee", form.current.elements.referee.checked);
-    formData.append("cr", form.current.elements.cr.checked);
-    formData.append("others", form.current.elements.others.checked);
-
-    emailjs
-      .sendForm(
-        "service_6tgi9zy",
-        "template_ngh567r",
-        form.current,
-        "V_vHkacTpJ3QSbc4h"
-      )
-      .then(
-        (result) => {
-          alert("Your mail sent successfully!");
-        },
-        (error) => {
-          alert(error.text);
+  const subscribeToMailchimp = async (email, firstName, lastName) => {
+    const API_KEY = '7f35a93617657836059c4f6bf0465da7-us14';
+    const LIST_ID = '6b37acabd9';
+  
+    const data = {
+      email_address: email,
+      status: 'subscribed',
+      merge_fields: {
+        FNAME: firstName,
+        LNAME: lastName,
+      },
+    };
+  
+    try {
+      const response = await axios.post(
+        `https://us14.api.mailchimp.com/3.0/lists/6b37acabd9/members`,
+        data,
+        {
+          headers: {
+            Authorization: `apikey ${API_KEY}`,
+          },
         }
       );
-    e.target.reset();
-  };  
+  
+      console.log('Successfully subscribed', response.data);
+      // Handle success
+    } catch (error) {
+      console.error('Error subscribing', error);
+      // Handle error
+    }
+  };
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handleFirstNameChange = (e) => {
+    setFirstName(e.target.value);
+  };
+
+  const handleLastNameChange = (e) => {
+    setLastName(e.target.value);
+  };
+
+const handleSubmit = (e) => {
+  e.preventDefault();
+  subscribeToMailchimp(email, firstName, lastName);
+};
 
   return (
-    <div className="flex gap-8 justify-center items-center flex-col lg:flex-row">
-      <div>
-        <h2 className="text-4xl font-semibold">Subscribe to Our Newsletter!</h2>
-        <p className="text-blue-950  leading-10">
-          Subscribe to our newsletter and stay updated
-        </p>
-        <div className="mt-4">
-          <form ref={form} onSubmit={sendEmail}>
-            <Stack spacing={2}>
-              <Input
-                name="client_name"
-                placeholder="Your Name"
-                variant="outlined"
-                required
-              />
-              <Input
-                name="client_land"
-                placeholder="Land"
-                variant="outlined"
-                required
-              />
-              <Input
-                name="client_email"
-                placeholder="Email"
-                variant="outlined"
-                required
-              />
-            </Stack>
-
-            <Typography
-              id="sandwich-group"
-              level="body-sm"
-              fontWeight="md"
-              fontSize="lg"
-              color="white"
-              mt={4}
-            >
-              Your Role As:
-            </Typography>
-
-            <input type="checkbox" name="referee" label="Referee" value="Referee"/> Referee <br />
-            <input type="checkbox" name="cr" label="Referee" value="Country Representative"/> Country Representative <br />
-            <input type="checkbox" name="others" label="Referee" value="Others"/> Others
-            
-
-            <Stack alignItems="center" mt={1}>
-              <Button type="submit" variant="soft" color="neutral">
-                Subscribe
-              </Button>
-            </Stack>
-          </form>
-        </div>
-      </div>
-      {/* venu google map */}
-      <div>
-        <iframe
-          title="venu map"
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8991.868223120673!2d9.5180556!3d55.7069444!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c825c06efa945%3A0xbea002bd0b4e2a96!2sDGI%20Huset%20Vejle!5e0!3m2!1sen!2sbd!4v1693902257627!5m2!1sen!2sbd"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          className="rounded-xl hover:shadow-lg hover:shadow-blue-300 sm:w-[380px] sm:h-[280px]"
-        ></iframe>
-      </div>
-    </div>
+    <form onSubmit={handleSubmit}>
+      <input
+        type="email"
+        placeholder="Email"
+        value={email}
+        onChange={handleEmailChange}
+      />
+      <input
+        type="text"
+        placeholder="First Name"
+        value={firstName}
+        onChange={handleFirstNameChange}
+      />
+      <input
+        type="text"
+        placeholder="Last Name"
+        value={lastName}
+        onChange={handleLastNameChange}
+      />
+      <button type="submit">Subscribe</button>
+    </form>
   );
 };
 
-export default NewsLetter;
+export default NewLetter;
