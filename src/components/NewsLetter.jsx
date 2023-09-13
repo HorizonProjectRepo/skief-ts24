@@ -34,7 +34,7 @@ const NewsLetter = () => {
         console.error('Mailchimp subscription failed:', response.data);
       }
     } catch (error) {
-      console.error('Mailchimp subscription failed:', error);
+      console.error('Mailchimp subscription failed', error);
     }
   };
 
