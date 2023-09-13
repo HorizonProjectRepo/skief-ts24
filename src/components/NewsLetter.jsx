@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const NewsLetter = () => {
   const [firstName, setFirstName] = useState('');
@@ -29,13 +32,16 @@ const NewsLetter = () => {
       });
 
       if (response.data.status === 'subscribed') {
-        console.log('Subscribed successfully');
+        toast.success('Subscribed!');
       } else {
-        console.error('Mailchimp subscription failed:', response.data);
+        toast.error('Subscription failed, try again!');
       }
     } catch (error) {
-      console.error('Mailchimp subscription failed', error);
+      toast.error('Subscription failed, try again!');
     }
+    setFirstName('')
+    setLastName('')
+    setEmail('')
   };
 
   return (

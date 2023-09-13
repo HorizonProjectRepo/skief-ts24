@@ -12,6 +12,7 @@ import ins2 from "../assets/images/ins2.PNG";
 import logo1 from "../assets/images/logo1.PNG";
 import logo2 from "../assets/images/logo2.png";
 import NewsLetter from "../components/NewsLetter";
+import { toast } from "react-toastify";
 
 const Home = () => {
   const allData = [
@@ -221,7 +222,7 @@ const Home = () => {
                 color="primary"
                 variant="soft"
                 size="sm"
-                onClick={() => (window.alert("Booking service will be added soon!!"))}>
+                onClick={() => (toast.info("Booking service will be added soon!!"))}>
                   Book Your Hotel
               </Button>
             </div>
