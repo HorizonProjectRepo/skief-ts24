@@ -22,7 +22,7 @@ const NewsLetter = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        'https://us14.api.mailchimp.com/3.0/lists/6b37acabd9/members',
+        `${process.env.REACT_APP_MAILCHIMP_KEY}`,
         {
           email_address: email,
           status: 'subscribed',
@@ -34,7 +34,7 @@ const NewsLetter = () => {
         {
           auth: {
             username: 'anystring',
-            password: '40917d6d977e92b107929bed942d3001-us14',
+            password: `${process.env.REACT_APP_MAILCHIMP_PASSWORD}`,
           },
         }
       );
