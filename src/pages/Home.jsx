@@ -246,7 +246,7 @@ const Home = () => {
       {/* Subscription area */}
       <section className="mb-16">
         <Fade direction="down" duration={2000}>
-          <div className=" mx-auto max-sm:w-[90%] sm:w-[80%] rounded-xl shadow-3xl shadow-blue-950 p-6">
+          <div className=" mx-auto  rounded-xl shadow-3xl shadow-blue-950 p-6">
             <NewsLetter 
             />
           </div>
