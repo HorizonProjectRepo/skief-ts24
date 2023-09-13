@@ -20,64 +20,37 @@ const NewsLetter = () => {
 
   const subscribe = async (e) => {
     e.preventDefault();
+
     try {
-      const response = await axios.post(
-        `${process.env.REACT_APP_MAILCHIMP_KEY}`,
-        {
-          email_address: email,
-          status: 'subscribed',
-          merge_fields: {
-            FNAME: firstName,
-            LNAME: lastName,
-          },
-        },
-        {
-          auth: {
-            username: 'anystring',
-            password: `${process.env.REACT_APP_MAILCHIMP_PASSWORD}`,
-          },
-        }
-      );
-      if (response && response.data) {
-        console.log('Subscribed successfully:', response.data);
+      const response = await axios.post('https://skief-server-main.vercel.app/subscribe', {
+        email,
+        firstName,
+        lastName,
+      });
+
+      if (response.data.status === 'subscribed') {
+        console.log('Subscribed successfully');
       } else {
-        console.error('Subscription failed. No response data.');
+        console.error('Mailchimp subscription failed:', response.data);
       }
     } catch (error) {
-      console.error('Subscription failed:', error.response ? error.response.data : error.message);
+      console.error('Mailchimp subscription failed:', error);
     }
   };
+
   return (
     <form onSubmit={subscribe}>
       <div>
-        <label htmlFor="firstName">First Name:</label>
-        <input
-          type="text"
-          id="firstName"
-          placeholder="Enter your first name"
-          value={firstName}
-          onChange={handleFirstNameChange}
-        />
+        <label>First Name:</label>
+        <input type="text" value={firstName} onChange={handleFirstNameChange} />
       </div>
       <div>
-        <label htmlFor="lastName">Last Name:</label>
-        <input
-          type="text"
-          id="lastName"
-          placeholder="Enter your last name"
-          value={lastName}
-          onChange={handleLastNameChange}
-        />
+        <label>Last Name:</label>
+        <input type="text" value={lastName} onChange={handleLastNameChange} />
       </div>
       <div>
-        <label htmlFor="email">Email:</label>
-        <input
-          type="email"
-          id="email"
-          placeholder="Enter your email"
-          value={email}
-          onChange={handleEmailChange}
-        />
+        <label>Email:</label>
+        <input type="email" value={email} onChange={handleEmailChange} />
       </div>
       <button type="submit">Subscribe</button>
     </form>
