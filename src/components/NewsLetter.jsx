@@ -46,7 +46,7 @@ const NewsLetter = () => {
 
   return (
     <form onSubmit={subscribe}>
-      <div className='flex flex-col-reverse md:flex-row justify-between items-center gap-6 md:gap-0'>
+      <div className='flex flex-col md:flex-row justify-between items-center gap-6 md:gap-0'>
         <div>
           <div className='flex flex-col gap-3'>
             <label>Name</label>

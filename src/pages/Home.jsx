@@ -254,7 +254,7 @@ const Home = () => {
         </Fade>
       </section>
 
-      <div class="py-10 border-t-2 border-gray-900 lg:px-0">
+      <div class="py-10 border-t-2 lg:px-0">
         <div class="flex items-center flex-col md:flex-row gap-3 max-sm:pl-2 mx-auto justify-center">
           <p className="text-xl ">
             <svg
@@ -275,7 +275,7 @@ const Home = () => {
             <a
               target="_blank"
               rel="noreferrer"
-              class="font-semibold text-black hover:text-gray-900"
+              class="font-semibold text-black hover:text-gray-900 hover:underline"
               href="https://www.kodeend.com/"
             >
               {" "}
