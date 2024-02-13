@@ -82,18 +82,7 @@ const Home = () => {
         </div>
 
         {/* only for mobile device */}
-        <div className="flex flex-row gap-4 md:hidden">
-          <div className="">
-            <Fade duration={2000} direction="left">
-              <img className="w-24 sm:w-32" src={logo2} alt="" />
-            </Fade>
-          </div>
-          <div className="">
-            <Fade duration={2000} direction="right">
-              <img className="w-24 sm:w-32" src={logo1} alt="" />
-            </Fade>
-          </div>
-        </div>
+       
         {/* only for mobile device */}
 
         <div className="max-md:hidden">
@@ -166,72 +155,35 @@ const Home = () => {
       
       {/* Venue area */}
       <Fade duration={2000} direction="left">
-        <div className="grid lg:grid-cols-6 gap-4 sm:mt-20 sm:mb-24 mb-12 px-4 lg:px-0">
+        <div className=" mb-12 px-4 lg:px-0 shadow-3xl shadow-blue-950 py-8 text-white rounded">
 
-          <div className="col-span-3">
-            <p className="h-16 font-bold text-lg">PRELIMINARY SCHEDULE</p>
-            <div className="grid grid-cols-3">
-              <p>Thursday, 10th Oct'24:</p>
-              <p className="col-span-2">Referee Clinic</p>
+          <div className="flex justify-center rounded text-lg">
+            <div>
+            <p className="h-16 mb-2 font-bold text-2xl text-center">PRELIMINARY SCHEDULE</p>
+            <div className="flex flex-col space-y-4">
+            <div className="flex  gap-12">
+              <p className="basis-[40%]">Thursday, 10th Oct'24:</p>
+              <p className="basis-[60%]">Referee Clinic</p>
             </div>
-            <div className="grid grid-cols-3 mt-[4.2rem]">
-              <p>Friday, 11th Oct'24:</p>
-              <div className="col-span-2">
+            <div className="flex  gap-12">
+              <p className="basis-[40%]">Friday, 11th Oct'24:</p>
+              <div className="basis-[60%]">
                   <p>Referee Clinic continued</p>
                   <p>Technical Seminar</p>
                   <p>BOD meeting and General assembly</p>
               </div>
             </div>
-            <div className="grid grid-cols-3 mt-10">
-              <p>Saturday, 12th Oct'24:</p>
-              <p className="col-span-2">
+            <div className="flex gap-12">
+              <p className="basis-[40%]">Saturday, 12th Oct'24:</p>
+              <p className="basis-[60%]">
                 Technical Seminar <br />
                 Dan grading <br />
                 Party
               </p>
             </div>
-            <div className="grid grid-cols-3 my-8">
-              <p>Sunday, 13th Oct'24:</p>
-              <p className="col-span-2">Technical Seminar</p>
-            </div>
-          </div>
-
-          <div className="col-span-3">
-            <p className="h-16 font-bold text-lg">
-              INFORMATION WILL BE UPDATED CONTINOUSLY
-            </p>
-            <div className="">
-              <p>
-                Information like Accommodation options and possibilities, travel
-                info and more information will be part of the updates.
-              </p>
-            </div>
-
-            <div className="mt-12 flex flex-col  items-start gap-2">
-              
-              <a href="https://www.skief-referee.com/about" target="_blank" rel="noreferrer">
-                <Button 
-                  color="primary"
-                  variant="soft"
-                  size="sm" className="mb-6">
-                    SKIEF Referee Committe
-                </Button>
-              </a>
-
-              <Button 
-                color="primary"
-                variant="soft"
-                size="sm"
-                onClick={() => (toast.info("Booking service will be added soon!!"))}>
-                  Book Your Hotel
-              </Button>
-            </div>
-
-            <div className="mt-[2.2rem] flex">
-              <p>Contact information:</p>
-              <a href="mailto:carsten@skif.dk" className="ml-2 font-semibold ">
-                carsten@skif.dk
-              </a>
+            <div className="flex gap-12">
+              <p className="basis-[40%]">Sunday, 13th Oct'24:</p>
+              <p className="basis-[60%]">Technical Seminar</p>
             </div>
             <div className="mt-14">
               <p className="font-semibold">
@@ -239,8 +191,10 @@ const Home = () => {
                 7100 Vejle, Denmark
               </p>
             </div>
+            </div>
           </div>
 
+          </div>
         </div>
       </Fade>
 

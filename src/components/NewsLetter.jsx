@@ -47,18 +47,18 @@ const NewsLetter = () => {
   return (
     <form onSubmit={subscribe}>
       <div className='flex flex-col md:flex-row justify-between items-center gap-6 md:gap-0'>
-        <div>
+        <div className='w-[90%] sm:w-[384px]'>
           <div className='flex flex-col gap-3'>
             <label>Name</label>
-            <input className='text-black rounded-md p-3 lg:w-96' name="name" type="text" value={firstName} onChange={handleFirstNameChange} />
+            <input className='text-black rounded-md p-3 w-full sm:w-96' name="name" type="text" value={firstName} onChange={handleFirstNameChange} />
           </div>
           <div className='flex flex-col gap-3'>
             <label className='mt-3'>Address</label>
-            <input className='text-black rounded-md p-3 w-96' name="address" type="text" value={lastName} onChange={handleLastNameChange} />
+            <input className='text-black rounded-md p-3 w-full sm:w-96' name="address" type="text" value={lastName} onChange={handleLastNameChange} />
           </div>
           <div className='flex flex-col gap-3'>
             <label className='mt-3'>Email</label>
-            <input className='text-black rounded-md p-3 w-96' name="email" type="email" value={email} onChange={handleEmailChange} />
+            <input className='text-black rounded-md p-3 w-full sm:w-96' name="email" type="email" value={email} onChange={handleEmailChange} />
           </div>
           <button className='mt-4 bg-blue-950 p-3 rounded-md text-xl hover:bg-white hover:text-blue-950' type="submit">Subscribe</button>
 
