@@ -155,7 +155,7 @@ const Home = () => {
       
       {/* Venue area */}
       <Fade duration={2000} direction="left">
-        <div className=" mb-12 px-4 lg:px-0 shadow-3xl shadow-blue-950 py-8 text-white rounded">
+        <div className=" mb-12 px-4 lg:px-0 shadow-3xl shadow-blue-950 py-8 text-white rounded-xl">
 
           <div className="flex justify-center rounded text-lg">
             <div>

@@ -204,7 +204,7 @@ const Navbar = () => {
                 (isPending ? "pending" : isActive ? "" : "") +
                 " mx-4 hover:text-white h-[100px] flex items-center"
               }
-              target="_blank"
+              
               onMouseEnter={() => showDropdownHandler(true)}
               onMouseLeave={() => showDropdownHandler(false)}
             >
