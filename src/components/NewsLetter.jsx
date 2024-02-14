@@ -60,7 +60,7 @@ const NewsLetter = () => {
             <label className='mt-3'>Email</label>
             <input className='text-black rounded-md p-3 w-full sm:w-96' name="email" type="email" value={email} onChange={handleEmailChange} />
           </div>
-          <button className='mt-4 bg-blue-950 p-3 rounded-md text-xl hover:bg-white hover:text-blue-950' type="submit">Subscribe</button>
+          <button className='mt-4 bg-[#1d23ee] p-3 rounded-md text-xl font-semibold hover:bg-white hover:text-blue-950' type="submit">Subscribe</button>
 
         </div>
         <div className=''>

@@ -35,22 +35,24 @@ const Navbar = () => {
           <ul className="flex flex-col text-[12px] font-grotesk font-semibold basis-2/4 uppercase mx-auto">
             <li className="flex">
               <NavLink
-                to="/signup"
+                 to="http://www.skif.dk/side.asp?ID=87422"
                 className={({ isActive, isPending }) =>
                   (isPending ? "pending" : isActive ? "" : "") +
                   " hover:text-[#98979C] py-4 pl-2 pr-4 text-[12px]"
                 }
+                target="_blank"
               >
                 SKIEF TECHNICAL SEMINAR - SIGN UP
               </NavLink>
             </li>
             <li className="flex">
               <NavLink
-                to="/seminar-schedule"
+                to="http://www.skif.dk/xdoc/388/skief2024_schedule.pdf"
                 className={({ isActive, isPending }) =>
                   (isPending ? "pending" : isActive ? "" : "") +
                   "  hover:text-[#98979C] py-4 pl-2 pr-4"
                 }
+                target="_blank"
               >
                 SCHEDULE TECHNICAL SEMINAR
               </NavLink>
@@ -60,11 +62,12 @@ const Navbar = () => {
              flex flex-col"
             >
               <NavLink
-                to="/schedule-clinic"
+                 to="http://www.skif.dk/side.asp?ID=87424"
                 className={({ isActive, isPending }) =>
                   (isPending ? "pending" : isActive ? "" : "") +
                   "  hover:text-[#98979C] py-4 pl-2 pr-4 flex "
                 }
+                target="_blank"
                 onClick={() => setShowDropdown(!showDropdown)}
               >
                 SCHEDULE REFEREE CLINIC
@@ -72,22 +75,24 @@ const Navbar = () => {
             </li>
             <li className="flex">
               <NavLink
-                to="/hotel-booking"
+                 to="http://www.skif.dk/side.asp?ID=87420"
                 className={({ isActive, isPending }) =>
                   (isPending ? "pending" : isActive ? "" : "") +
                   "  hover:text-[#98979C] py-4 pl-2 pr-4"
                 }
+                target="_blank"
               >
                 HOTEL BOOKING AND HOTEL DISCOUNTS
               </NavLink>
             </li>
             <li className="flex">
               <NavLink
-                to="/information"
+                to="http://www.skif.dk/side.asp?ID=87421"
                 className={({ isActive, isPending }) =>
                   (isPending ? "pending" : isActive ? "" : "") +
                   "  hover:text-[#98979C] py-4 pl-2 pr-4"
                 }
+                target="_blank"
               >
                 NICE TO KNOW
               </NavLink>
@@ -122,7 +127,7 @@ const Navbar = () => {
           </ul>
         </div>
       )}
-      <div className="flex items-center justify-center max-lg:justify-between w-[98%] h-[100px] font-grotesk mx-auto uppercase">
+      <div className="flex items-center justify-center max-lg:justify-between w-[98%] h-[100px] font-grotesk mx-auto mt-2 uppercase">
         <div className="flex  gap-2 md:hidden">
           <div className="w-[80px]">
             <img
@@ -140,50 +145,54 @@ const Navbar = () => {
         <ul className="flex    text-[12px] font-semibold  max-md:hidden pb-4 ">
           <li className=" flex justify-center items-center">
             <NavLink
-              to="/signup"
+              to="http://www.skif.dk/side.asp?ID=87422"
               className={({ isActive, isPending }) =>
                 (isPending ? "pending" : isActive ? "" : "") +
                 " mx-4 hover:text-white"
               }
+              target="_blank"
             >
               SKIEF TECHNICAL SEMINAR - SIGN UP
             </NavLink>
           </li>
           <li className="flex justify-center items-center">
             <NavLink
-              to="/seminar-schedule"
+              to="http://www.skif.dk/xdoc/388/skief2024_schedule.pdf"
               
               className="mx-4 hover:text-white"
+              target="_blank"
             >
               SCHEDULE TECHNICAL SEMINAR
             </NavLink>
           </li>
           <li className="flex justify-center items-center">
             <NavLink
-              to="/schedule-clinic"
+              to="http://www.skif.dk/side.asp?ID=87424"
               
               className="mx-4 hover:text-white"
+              target="_blank"
             >
               SCHEDULE REFEREE CLINIC
             </NavLink>
           </li>
           <li className="relative flex justify-center items-center">
             <NavLink
-              to="/hotel-booking"
+              to="http://www.skif.dk/side.asp?ID=87420"
               
               className="mx-4 hover:text-white"
-             
+              target="_blank"
             >
               HOTEL BOOKING AND HOTEL DISCOUNTS
             </NavLink>
           </li>
           <li className="flex justify-center items-center">
             <NavLink
-              to="/information"
+              to="http://www.skif.dk/side.asp?ID=87421"
               className={({ isActive, isPending }) =>
                 (isPending ? "pending" : isActive ? "" : "") +
                 " mx-4 hover:text-white"
               }
+              target="_blank"
             >
               NICE TO KNOW
             </NavLink>
@@ -195,6 +204,7 @@ const Navbar = () => {
                 (isPending ? "pending" : isActive ? "" : "") +
                 " mx-4 hover:text-white h-[100px] flex items-center"
               }
+              target="_blank"
               onMouseEnter={() => showDropdownHandler(true)}
               onMouseLeave={() => showDropdownHandler(false)}
             >
