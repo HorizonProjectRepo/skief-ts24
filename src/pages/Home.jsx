@@ -13,6 +13,7 @@ import logo1 from "../assets/images/logo1.PNG";
 import logo2 from "../assets/images/logo2.png";
 import NewsLetter from "../components/NewsLetter";
 import { toast } from "react-toastify";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const allData = [
@@ -155,46 +156,16 @@ const Home = () => {
       
       {/* Venue area */}
       <Fade duration={2000} direction="left">
-        <div className=" mb-12 px-4 lg:px-0 shadow-3xl shadow-blue-950 py-8 text-white rounded-xl">
+        <div className=" mb-12 px-4 lg:px-0 shadow-3xl shadow-blue-950 py-8 text-white rounded-xl flex justify-center">
 
-          <div className="flex justify-center rounded text-lg">
-            <div>
-            <p className="h-16 mb-2 font-bold text-2xl text-center">PRELIMINARY SCHEDULE</p>
-            <div className="flex flex-col space-y-4">
-            <div className="flex  gap-12">
-              <p className="basis-[40%]">Thursday, 10th Oct'24:</p>
-              <p className="basis-[60%]">Referee Clinic</p>
-            </div>
-            <div className="flex  gap-12">
-              <p className="basis-[40%]">Friday, 11th Oct'24:</p>
-              <div className="basis-[60%]">
-                  <p>Referee Clinic continued</p>
-                  <p>Technical Seminar</p>
-                  <p>BOD meeting and General assembly</p>
-              </div>
-            </div>
-            <div className="flex gap-12">
-              <p className="basis-[40%]">Saturday, 12th Oct'24:</p>
-              <p className="basis-[60%]">
-                Technical Seminar <br />
-                Dan grading <br />
-                Party
-              </p>
-            </div>
-            <div className="flex gap-12">
-              <p className="basis-[40%]">Sunday, 13th Oct'24:</p>
-              <p className="basis-[60%]">Technical Seminar</p>
-            </div>
-            <div className="mt-14">
-              <p className="font-semibold">
-                Venue address: <br /> DGI Huset Vejle, Willy Sørensens Plads 5,
-                7100 Vejle, Denmark
-              </p>
-            </div>
-            </div>
+          <div className="flex flex-col space-y-3 my-8">
+            <p>Sign up <Link className="ml-1 text-[#000391] max-[480px]:block max-[480px]:ml-0 hover:underline " to="http://www.skif.dk/side.asp?ID=87422">http://www.skif.dk/side.asp?ID=87422</Link></p>
+            <p>Schedule technical seminar <Link className="ml-1 text-[#000391] max-[480px]:block max-[480px]:ml-0 hover:underline" to="http://www.skif.dk/xdoc/388/skief2024_schedule.pdf">http://www.skif.dk/xdoc/388/skief2024_schedule.pdf</Link></p>
+            <p>Schedule referee clinic...ikke klar endnu...men:<Link className="ml-1 text-[#000391] max-[480px]:block max-[480px]:ml-0 hover:underline" to="http://www.skif.dk/side.asp?ID=87424">http://www.skif.dk/side.asp?ID=87424</Link></p>
+            <p>Nice to know:<Link className="ml-1 text-[#000391] max-[480px]:block max-[480px]:ml-0 hover:underline" to="http://www.skif.dk/side.asp?ID=87421">http://www.skif.dk/side.asp?ID=87421</Link></p>
+            <p>Hotel <Link className="ml-1 text-[#000391] max-[480px]:block max-[480px]:ml-0 hover:underline" to="http://www.skif.dk/side.asp?ID=87420">http://www.skif.dk/side.asp?ID=87420</Link></p>
           </div>
-
-          </div>
+         
         </div>
       </Fade>
 

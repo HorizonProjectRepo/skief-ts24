@@ -1,0 +1,43 @@
+ <Fade duration={2000} direction="left">
+        <div className=" mb-12 px-4 lg:px-0 shadow-3xl shadow-blue-950 py-8 text-white rounded-xl">
+
+          <div className="flex justify-center rounded text-lg">
+            <div>
+            <p className="h-16 mb-2 font-bold text-2xl text-center">PRELIMINARY SCHEDULE</p>
+            <div className="flex flex-col space-y-4">
+            <div className="flex  gap-12">
+              <p className="basis-[40%]">Thursday, 10th Oct'24:</p>
+              <p className="basis-[60%]">Referee Clinic</p>
+            </div>
+            <div className="flex  gap-12">
+              <p className="basis-[40%]">Friday, 11th Oct'24:</p>
+              <div className="basis-[60%]">
+                  <p>Referee Clinic continued</p>
+                  <p>Technical Seminar</p>
+                  <p>BOD meeting and General assembly</p>
+              </div>
+            </div>
+            <div className="flex gap-12">
+              <p className="basis-[40%]">Saturday, 12th Oct'24:</p>
+              <p className="basis-[60%]">
+                Technical Seminar <br />
+                Dan grading <br />
+                Party
+              </p>
+            </div>
+            <div className="flex gap-12">
+              <p className="basis-[40%]">Sunday, 13th Oct'24:</p>
+              <p className="basis-[60%]">Technical Seminar</p>
+            </div>
+            <div className="mt-14">
+              <p className="font-semibold">
+                Venue address: <br /> DGI Huset Vejle, Willy Sørensens Plads 5,
+                7100 Vejle, Denmark
+              </p>
+            </div>
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </Fade>
