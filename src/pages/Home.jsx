@@ -161,8 +161,8 @@ const Home = () => {
           <div className="flex flex-col space-y-3 my-8">
             <p>Sign up <Link className="ml-1 text-[#000391] max-[480px]:block max-[480px]:ml-0 hover:underline " to="http://www.skif.dk/side.asp?ID=87422">http://www.skif.dk/side.asp?ID=87422</Link></p>
             <p>Schedule technical seminar <Link className="ml-1 text-[#000391] max-[480px]:block max-[480px]:ml-0 hover:underline" to="http://www.skif.dk/xdoc/388/skief2024_schedule.pdf">http://www.skif.dk/xdoc/388/skief2024_schedule.pdf</Link></p>
-            <p>Schedule referee clinic...ikke klar endnu...men:<Link className="ml-1 text-[#000391] max-[480px]:block max-[480px]:ml-0 hover:underline" to="http://www.skif.dk/side.asp?ID=87424">http://www.skif.dk/side.asp?ID=87424</Link></p>
-            <p>Nice to know:<Link className="ml-1 text-[#000391] max-[480px]:block max-[480px]:ml-0 hover:underline" to="http://www.skif.dk/side.asp?ID=87421">http://www.skif.dk/side.asp?ID=87421</Link></p>
+            <p>Schedule referee clinic <Link className="ml-1 text-[#000391] max-[480px]:block max-[480px]:ml-0 hover:underline" to="http://www.skif.dk/side.asp?ID=87424">http://www.skif.dk/side.asp?ID=87424</Link></p>
+            <p>Nice to know <Link className="ml-1 text-[#000391] max-[480px]:block max-[480px]:ml-0 hover:underline" to="http://www.skif.dk/side.asp?ID=87421">http://www.skif.dk/side.asp?ID=87421</Link></p>
             <p>Hotel <Link className="ml-1 text-[#000391] max-[480px]:block max-[480px]:ml-0 hover:underline" to="http://www.skif.dk/side.asp?ID=87420">http://www.skif.dk/side.asp?ID=87420</Link></p>
           </div>
          
