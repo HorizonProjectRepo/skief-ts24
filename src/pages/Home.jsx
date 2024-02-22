@@ -1,5 +1,5 @@
 import { Button } from "@mui/joy";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Fade } from "react-awesome-reveal";
 import img1 from "../assets/images/1.PNG";
 import img2 from "../assets/images/2.PNG";
@@ -14,8 +14,10 @@ import logo2 from "../assets/images/logo2.png";
 import NewsLetter from "../components/NewsLetter";
 import { toast } from "react-toastify";
 import { Link } from "react-router-dom";
-
+import Cookies from "js-cookie";
+import Cookie from "../components/Cookie";
 const Home = () => {
+ 
   const allData = [
     {
       id: 1,
@@ -50,9 +52,12 @@ const Home = () => {
       title: "8th dan",
     },
   ];
+ 
   return (
     <>
+    
       <section className="flex items-center flex-col lg:flex-row">
+       
         {/* <p className="text-2xl font-bold mb-3 text-[#001143]">
           VEJLE · DENMARK
         </p>
