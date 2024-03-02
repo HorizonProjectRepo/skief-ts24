@@ -161,17 +161,19 @@ const Home = () => {
       
       {/* Venue area */}
       <Fade duration={2000} direction="left">
-        <div className=" mb-12 px-4 lg:px-0 shadow-3xl shadow-blue-950 py-8 text-white rounded-xl flex justify-center">
+        <div className=" mb-12 px-4 lg:px-0 shadow-3xl shadow-blue-950 py-8 text-white rounded-xl flex flex-col  justify-center items-center">
 
-          <div className="flex flex-col space-y-3 my-8">
-            <p>Sign up <Link className="ml-1 text-[#000391] max-[480px]:block max-[480px]:ml-0 hover:underline " to="http://www.skif.dk/side.asp?ID=87422">http://www.skif.dk/side.asp?ID=87422</Link></p>
-            <p>Schedule technical seminar <Link className="ml-1 text-[#000391] max-[480px]:block max-[480px]:ml-0 hover:underline" to="http://www.skif.dk/xdoc/388/skief2024_schedule.pdf">http://www.skif.dk/xdoc/388/skief2024_schedule.pdf</Link></p>
-            <p>Schedule referee clinic <Link className="ml-1 text-[#000391] max-[480px]:block max-[480px]:ml-0 hover:underline" to="http://www.skif.dk/side.asp?ID=87424">http://www.skif.dk/side.asp?ID=87424</Link></p>
-            <p>Nice to know <Link className="ml-1 text-[#000391] max-[480px]:block max-[480px]:ml-0 hover:underline" to="http://www.skif.dk/side.asp?ID=87421">http://www.skif.dk/side.asp?ID=87421</Link></p>
-            <p>Hotel <Link className="ml-1 text-[#000391] max-[480px]:block max-[480px]:ml-0 hover:underline" to="http://www.skif.dk/side.asp?ID=87420">http://www.skif.dk/side.asp?ID=87420</Link></p>
+          <div className="flex flex-col space-y-3 mt-8 mb-6">
+            <p>Sign up <Link className="ml-1 text-[#000391] max-[480px]:block max-[480px]:ml-0 hover:underline text-[16px] max-[480px]:text-[12px]" to="http://www.skif.dk/side.asp?ID=87422">http://www.skif.dk/side.asp?ID=87422</Link></p>
+            <p>Schedule technical seminar <Link className="ml-1 text-[#000391] max-[480px]:block max-[480px]:ml-0 hover:underline text-[16px] max-[480px]:text-[12px]" to="http://www.skif.dk/xdoc/388/skief2024_schedule.pdf">http://www.skif.dk/xdoc/388/skief2024_schedule.pdf</Link></p>
+            <p>Schedule referee clinic <Link className="ml-1 text-[#000391] max-[480px]:block max-[480px]:ml-0 hover:underline text-[16px] max-[480px]:text-[12px]" to="http://www.skif.dk/side.asp?ID=87424">http://www.skif.dk/side.asp?ID=87424</Link></p>
+            <p>Nice to know <Link className="ml-1 text-[#000391] max-[480px]:block max-[480px]:ml-0 hover:underline text-[16px] max-[480px]:text-[12px]" to="http://www.skif.dk/side.asp?ID=87421">http://www.skif.dk/side.asp?ID=87421</Link></p>
+            <p>Hotel <Link className="ml-1 text-[#000391] max-[480px]:block max-[480px]:ml-0 hover:underline text-[16px] max-[480px]:text-[12px]" to="http://www.skif.dk/side.asp?ID=87420">http://www.skif.dk/side.asp?ID=87420</Link></p>
+           
           </div>
-         
+          <div className="text-[20px]  ">Deadline for Sign Up is<span className="font-bold text-[#000391] ml-2 max-[480px]:block">8th September 2024</span> </div>
         </div>
+       
       </Fade>
 
       {/* Subscription area */}

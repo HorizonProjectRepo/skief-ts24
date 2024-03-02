@@ -21,7 +21,8 @@ const Main = () => {
       <div className="max-w-5xl mx-auto text-white">
         <Outlet />
       </div>
-      {showCookie && <Cookie setCookie={setCookie} />}
+      {/* {showCookie && <Cookie setCookie={setCookie} />} */}
+      {showCookie && <Cookie setCookie={setCookie} setShowCookie={setShowCookie} />}
     </>
   );
 };
