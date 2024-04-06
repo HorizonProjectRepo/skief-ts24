@@ -35,7 +35,7 @@ const Navbar = () => {
           <ul className="flex flex-col text-[12px] font-grotesk font-semibold basis-2/4 uppercase mx-auto">
             <li className="flex">
               <NavLink
-                 to="http://www.skif.dk/side.asp?ID=87422"
+                to="http://www.skif.dk/side.asp?ID=87422"
                 className={({ isActive, isPending }) =>
                   (isPending ? "pending" : isActive ? "" : "") +
                   " hover:text-[#98979C] py-4 pl-2 pr-4 text-[12px]"
@@ -47,7 +47,7 @@ const Navbar = () => {
             </li>
             <li className="flex">
               <NavLink
-                to="http://www.skif.dk/xdoc/388/skief2024_schedule.pdf"
+                to="/skief2024_schedule.pdf"
                 className={({ isActive, isPending }) =>
                   (isPending ? "pending" : isActive ? "" : "") +
                   "  hover:text-[#98979C] py-4 pl-2 pr-4"
@@ -62,7 +62,7 @@ const Navbar = () => {
              flex flex-col"
             >
               <NavLink
-                 to="http://www.skif.dk/side.asp?ID=87424"
+                to="http://www.skif.dk/side.asp?ID=87424"
                 className={({ isActive, isPending }) =>
                   (isPending ? "pending" : isActive ? "" : "") +
                   "  hover:text-[#98979C] py-4 pl-2 pr-4 flex "
@@ -75,7 +75,7 @@ const Navbar = () => {
             </li>
             <li className="flex">
               <NavLink
-                 to="http://www.skif.dk/side.asp?ID=87420"
+                to="http://www.skif.dk/side.asp?ID=87420"
                 className={({ isActive, isPending }) =>
                   (isPending ? "pending" : isActive ? "" : "") +
                   "  hover:text-[#98979C] py-4 pl-2 pr-4"
@@ -99,7 +99,6 @@ const Navbar = () => {
             </li>
             <li className="flex">
               <NavLink
-               
                 className={({ isActive, isPending }) =>
                   (isPending ? "pending" : isActive ? "" : "") +
                   "  hover:text-[#98979C] py-4 pl-2 pr-4"
@@ -157,8 +156,7 @@ const Navbar = () => {
           </li>
           <li className="flex justify-center items-center">
             <NavLink
-              to="http://www.skif.dk/xdoc/388/skief2024_schedule.pdf"
-              
+              to="/skief2024_schedule.pdf"
               className="mx-4 hover:text-white"
               target="_blank"
             >
@@ -168,7 +166,6 @@ const Navbar = () => {
           <li className="flex justify-center items-center">
             <NavLink
               to="http://www.skif.dk/side.asp?ID=87424"
-              
               className="mx-4 hover:text-white"
               target="_blank"
             >
@@ -178,7 +175,6 @@ const Navbar = () => {
           <li className="relative flex justify-center items-center">
             <NavLink
               to="http://www.skif.dk/side.asp?ID=87420"
-              
               className="mx-4 hover:text-white"
               target="_blank"
             >
@@ -199,12 +195,10 @@ const Navbar = () => {
           </li>
           <li className="relative flex justify-center items-center">
             <NavLink
-             
               className={({ isActive, isPending }) =>
                 (isPending ? "pending" : isActive ? "" : "") +
                 " mx-4 hover:text-white h-[100px] flex items-center"
               }
-              
               onMouseEnter={() => showDropdownHandler(true)}
               onMouseLeave={() => showDropdownHandler(false)}
             >
