@@ -70,7 +70,7 @@ const Navbar = () => {
                 target="_blank"
                 onClick={() => setShowDropdown(!showDropdown)}
               >
-                SCHEDULE REFEREE CLINIC
+                REFEREE CLINIC
               </NavLink>
             </li>
             <li className="flex">
@@ -169,7 +169,7 @@ const Navbar = () => {
               className="mx-4 hover:text-white"
               target="_blank"
             >
-              SCHEDULE REFEREE CLINIC
+              REFEREE CLINIC
             </NavLink>
           </li>
           <li className="relative flex justify-center items-center">
