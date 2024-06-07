@@ -17,7 +17,6 @@ import { Link } from "react-router-dom";
 import Cookies from "js-cookie";
 import Cookie from "../components/Cookie";
 const Home = () => {
- 
   const allData = [
     {
       id: 1,
@@ -52,12 +51,10 @@ const Home = () => {
       title: "8th dan",
     },
   ];
- 
+
   return (
     <>
-    
       <section className="flex items-center flex-col lg:flex-row">
-       
         {/* <p className="text-2xl font-bold mb-3 text-[#001143]">
           VEJLE · DENMARK
         </p>
@@ -83,20 +80,19 @@ const Home = () => {
         </div>
         <div className="flex-1">
           <Fade duration={1500} direction="down">
-          <img className="" src={hero} alt="hero" />
-        </Fade>
+            <img className="" src={hero} alt="hero" />
+          </Fade>
         </div>
 
         {/* only for mobile device */}
-       
+
         {/* only for mobile device */}
 
         <div className="max-md:hidden">
-            <Fade duration={2000} direction="right">
-              <img className="w-24 sm:w-32" src={logo1} alt="" />
-            </Fade>
-          </div>
-        
+          <Fade duration={2000} direction="right">
+            <img className="w-24 sm:w-32" src={logo1} alt="" />
+          </Fade>
+        </div>
       </section>
 
       {/* Instructor 1 */}
@@ -158,30 +154,80 @@ const Home = () => {
           })}
         </div>
       </section>
-      
+
       {/* Venue area */}
       <Fade duration={2000} direction="left">
-        <div className=" mb-12 px-4 lg:px-0 shadow-3xl shadow-blue-950 py-8 text-white rounded-xl flex flex-col  justify-center items-center">
+        <div className="my-12 px-4 lg:px-0 shadow-3xl shadow-blue-950 py-8 text-white rounded-xl flex flex-col  justify-center items-center">
+          <div className="text-[20px] max-w-3xl">
+            ATTENTION!:{" "}
+            <span className="font-bold text-[#000391]">
+              No payment for seminar, referee clinic, party, arranged food etc.
+              will be possible at the venue! All payment must be done via the
+              sign up link!
+            </span>{" "}
+          </div>
 
           <div className="flex flex-col space-y-3 mt-8 mb-6">
-            <p>Sign up <Link className="ml-1 text-[#000391] max-[480px]:block max-[480px]:ml-0 hover:underline text-[16px] max-[480px]:text-[12px]" to="http://www.skif.dk/side.asp?ID=87422">http://www.skif.dk/side.asp?ID=87422</Link></p>
-            <p>Schedule technical seminar <Link className="ml-1 text-[#000391] max-[480px]:block max-[480px]:ml-0 hover:underline text-[16px] max-[480px]:text-[12px]" to="http://www.skif.dk/xdoc/388/skief2024_schedule.pdf">http://www.skif.dk/xdoc/388/skief2024_schedule.pdf</Link></p>
-            <p>Schedule referee clinic <Link className="ml-1 text-[#000391] max-[480px]:block max-[480px]:ml-0 hover:underline text-[16px] max-[480px]:text-[12px]" to="http://www.skif.dk/side.asp?ID=87424">http://www.skif.dk/side.asp?ID=87424</Link></p>
-            <p>Nice to know <Link className="ml-1 text-[#000391] max-[480px]:block max-[480px]:ml-0 hover:underline text-[16px] max-[480px]:text-[12px]" to="http://www.skif.dk/side.asp?ID=87421">http://www.skif.dk/side.asp?ID=87421</Link></p>
-            <p>Hotel <Link className="ml-1 text-[#000391] max-[480px]:block max-[480px]:ml-0 hover:underline text-[16px] max-[480px]:text-[12px]" to="http://www.skif.dk/side.asp?ID=87420">http://www.skif.dk/side.asp?ID=87420</Link></p>
-           
+            <p>
+              Sign up{" "}
+              <Link
+                className="ml-1 text-[#000391] max-[480px]:block max-[480px]:ml-0 hover:underline text-[16px] max-[480px]:text-[12px]"
+                to="http://www.skif.dk/side.asp?ID=87422"
+              >
+                http://www.skif.dk/side.asp?ID=87422
+              </Link>
+            </p>
+            <p>
+              Schedule technical seminar{" "}
+              <Link
+                className="ml-1 text-[#000391] max-[480px]:block max-[480px]:ml-0 hover:underline text-[16px] max-[480px]:text-[12px]"
+                to="http://www.skif.dk/xdoc/388/skief2024_schedule.pdf"
+              >
+                http://www.skif.dk/xdoc/388/skief2024_schedule.pdf
+              </Link>
+            </p>
+            <p>
+              Schedule referee clinic{" "}
+              <Link
+                className="ml-1 text-[#000391] max-[480px]:block max-[480px]:ml-0 hover:underline text-[16px] max-[480px]:text-[12px]"
+                to="http://www.skif.dk/side.asp?ID=87424"
+              >
+                http://www.skif.dk/side.asp?ID=87424
+              </Link>
+            </p>
+            <p>
+              Nice to know{" "}
+              <Link
+                className="ml-1 text-[#000391] max-[480px]:block max-[480px]:ml-0 hover:underline text-[16px] max-[480px]:text-[12px]"
+                to="http://www.skif.dk/side.asp?ID=87421"
+              >
+                http://www.skif.dk/side.asp?ID=87421
+              </Link>
+            </p>
+            <p>
+              Hotel{" "}
+              <Link
+                className="ml-1 text-[#000391] max-[480px]:block max-[480px]:ml-0 hover:underline text-[16px] max-[480px]:text-[12px]"
+                to="http://www.skif.dk/side.asp?ID=87420"
+              >
+                http://www.skif.dk/side.asp?ID=87420
+              </Link>
+            </p>
           </div>
-          <div className="text-[20px]  ">Deadline for Sign Up is<span className="font-bold text-[#000391] ml-2 max-[480px]:block">8th September 2024</span> </div>
+          <div className="text-[20px]  ">
+            Deadline for Sign Up is
+            <span className="font-bold text-[#000391] ml-2 max-[480px]:block">
+              8th September 2024
+            </span>{" "}
+          </div>
         </div>
-       
       </Fade>
 
       {/* Subscription area */}
       <section className="mb-16">
         <Fade direction="down" duration={2000}>
           <div className=" mx-auto  rounded-xl shadow-3xl shadow-blue-950 p-6">
-            <NewsLetter 
-            />
+            <NewsLetter />
           </div>
         </Fade>
       </section>
