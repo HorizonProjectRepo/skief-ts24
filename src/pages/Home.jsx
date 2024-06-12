@@ -187,12 +187,21 @@ const Home = () => {
               </Link>
             </p>
             <p>
-              Schedule referee clinic{" "}
+              Referee clinic{" "}
               <Link
                 className="ml-1 text-[#000391] max-[480px]:block max-[480px]:ml-0 hover:underline text-[16px] max-[480px]:text-[12px]"
                 to="http://www.skif.dk/side.asp?ID=87424"
               >
                 http://www.skif.dk/side.asp?ID=87424
+              </Link>
+            </p>
+            <p>
+              Dan Grading
+              <Link
+                className="ml-1 text-[#000391] max-[480px]:block max-[480px]:ml-0 hover:underline text-[16px] max-[480px]:text-[12px]"
+                to="https://www.skif.dk/side.asp?ID=87689"
+              >
+                https://www.skif.dk/side.asp?ID=87689
               </Link>
             </p>
             <p>

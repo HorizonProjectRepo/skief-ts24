@@ -57,10 +57,7 @@ const Navbar = () => {
                 SCHEDULE TECHNICAL SEMINAR
               </NavLink>
             </li>
-            <li
-              className="
-             flex flex-col"
-            >
+            <li className="flex flex-col">
               <NavLink
                 to="http://www.skif.dk/side.asp?ID=87424"
                 className={({ isActive, isPending }) =>
@@ -71,6 +68,19 @@ const Navbar = () => {
                 onClick={() => setShowDropdown(!showDropdown)}
               >
                 REFEREE CLINIC
+              </NavLink>
+            </li>
+            <li className="flex flex-col">
+              <NavLink
+                to="https://www.skif.dk/side.asp?ID=87689"
+                className={({ isActive, isPending }) =>
+                  (isPending ? "pending" : isActive ? "" : "") +
+                  "  hover:text-[#98979C] py-4 pl-2 pr-4 flex "
+                }
+                target="_blank"
+                onClick={() => setShowDropdown(!showDropdown)}
+              >
+                DAN GRADING
               </NavLink>
             </li>
             <li className="flex">
@@ -170,6 +180,15 @@ const Navbar = () => {
               target="_blank"
             >
               REFEREE CLINIC
+            </NavLink>
+          </li>
+          <li className="flex justify-center items-center">
+            <NavLink
+              to="https://www.skif.dk/side.asp?ID=87689"
+              className="mx-4 hover:text-white"
+              target="_blank"
+            >
+              DAN GRADING
             </NavLink>
           </li>
           <li className="relative flex justify-center items-center">
