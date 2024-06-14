@@ -1,5 +1,4 @@
-import { Button } from "@mui/joy";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Fade } from "react-awesome-reveal";
 import img1 from "../assets/images/1.PNG";
 import img2 from "../assets/images/2.PNG";
@@ -12,10 +11,34 @@ import ins2 from "../assets/images/ins2.PNG";
 import logo1 from "../assets/images/logo1.PNG";
 import logo2 from "../assets/images/logo2.png";
 import NewsLetter from "../components/NewsLetter";
-import { toast } from "react-toastify";
-import { Link } from "react-router-dom";
-import Cookies from "js-cookie";
-import Cookie from "../components/Cookie";
+
+const links = [
+  {
+    label: "Sign Up",
+    url: "https://www.skif.dk/side.asp?ID=87422",
+  },
+  {
+    label: "Schedule technical seminar",
+    url: "https://www.skif.dk/xdoc/388/skief2024_schedule.pdf",
+  },
+  {
+    label: "Referee clinic",
+    url: "https://www.skif.dk/side.asp?ID=87424",
+  },
+  {
+    label: "Dan Grading",
+    url: "https://www.skif.dk/side.asp?ID=87689",
+  },
+  {
+    label: "Nice to know",
+    url: "https://www.skif.dk/side.asp?ID=87421",
+  },
+  {
+    label: "Hotel",
+    url: "https://www.skif.dk/side.asp?ID=87420",
+  },
+];
+
 const Home = () => {
   const allData = [
     {
@@ -168,60 +191,19 @@ const Home = () => {
           </div>
 
           <div className="flex flex-col space-y-3 mt-8 mb-6">
-            <p>
-              Sign up{" "}
-              <Link
-                className="ml-1 text-[#000391] max-[480px]:block max-[480px]:ml-0 hover:underline text-[16px] max-[480px]:text-[12px]"
-                to="http://www.skif.dk/side.asp?ID=87422"
-              >
-                http://www.skif.dk/side.asp?ID=87422
-              </Link>
-            </p>
-            <p>
-              Schedule technical seminar{" "}
-              <Link
-                className="ml-1 text-[#000391] max-[480px]:block max-[480px]:ml-0 hover:underline text-[16px] max-[480px]:text-[12px]"
-                to="http://www.skif.dk/xdoc/388/skief2024_schedule.pdf"
-              >
-                http://www.skif.dk/xdoc/388/skief2024_schedule.pdf
-              </Link>
-            </p>
-            <p>
-              Referee clinic{" "}
-              <Link
-                className="ml-1 text-[#000391] max-[480px]:block max-[480px]:ml-0 hover:underline text-[16px] max-[480px]:text-[12px]"
-                to="http://www.skif.dk/side.asp?ID=87424"
-              >
-                http://www.skif.dk/side.asp?ID=87424
-              </Link>
-            </p>
-            <p>
-              Dan Grading
-              <Link
-                className="ml-1 text-[#000391] max-[480px]:block max-[480px]:ml-0 hover:underline text-[16px] max-[480px]:text-[12px]"
-                to="https://www.skif.dk/side.asp?ID=87689"
-              >
-                https://www.skif.dk/side.asp?ID=87689
-              </Link>
-            </p>
-            <p>
-              Nice to know{" "}
-              <Link
-                className="ml-1 text-[#000391] max-[480px]:block max-[480px]:ml-0 hover:underline text-[16px] max-[480px]:text-[12px]"
-                to="http://www.skif.dk/side.asp?ID=87421"
-              >
-                http://www.skif.dk/side.asp?ID=87421
-              </Link>
-            </p>
-            <p>
-              Hotel{" "}
-              <Link
-                className="ml-1 text-[#000391] max-[480px]:block max-[480px]:ml-0 hover:underline text-[16px] max-[480px]:text-[12px]"
-                to="http://www.skif.dk/side.asp?ID=87420"
-              >
-                http://www.skif.dk/side.asp?ID=87420
-              </Link>
-            </p>
+            {links?.map((link, i) => (
+              <p key={i}>
+                {link.label}:{" "}
+                <a
+                  className="ml-1 text-[#000391] max-[480px]:block max-[480px]:ml-0 hover:underline text-[16px] max-[480px]:text-[12px]"
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {link.url}
+                </a>
+              </p>
+            ))}
           </div>
           <div className="text-[20px]  ">
             Deadline for Sign Up is
