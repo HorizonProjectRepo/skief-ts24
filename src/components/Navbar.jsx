@@ -23,7 +23,7 @@ const Navbar = () => {
     },
     {
       label: "SCHEDULE TECHNICAL SEMINAR",
-      url: "/skief2024_schedule.pdf",
+      url: "https://www.skif.dk/xdoc/388/skief2024_schedule.pdf",
     },
     {
       label: "REFEREE CLINIC",
