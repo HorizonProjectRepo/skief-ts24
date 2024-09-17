@@ -1,7 +1,7 @@
 import React from "react";
 import { Fade } from "react-awesome-reveal";
 import img1 from "../assets/images/1.PNG";
-import img2 from "../assets/images/2.PNG";
+import img2 from "../assets/images/2.1.jpg";
 import img3 from "../assets/images/3.PNG";
 import img4 from "../assets/images/4.PNG";
 import img5 from "../assets/images/5.PNG";
@@ -43,21 +43,21 @@ const Home = () => {
   const allData = [
     {
       id: 1,
-      img: img2,
-      name: "Shihan Shiro Asano",
-      title: "9th dan, UK1",
-    },
-    {
-      id: 2,
       img: img1,
       name: "Shihan Masaru Miura",
       title: "9th dan, Italiy",
     },
     {
-      id: 3,
+      id: 2,
       img: img3,
       name: "Shihan Rikuta Koga",
       title: "9th dan, Switzerland",
+    },
+    {
+      id: 3,
+      img: img2,
+      name: "Sensei Niels Thomassen",
+      title: "7th Dan,SKIF DK instructor",
     },
     {
       id: 4,
@@ -130,14 +130,14 @@ const Home = () => {
               <div className="mb-7 mx-auto" key={data.id}>
                 <Fade duration={1500} direction="left">
                   <img
-                    className="mb-4 w-full transition-transform hover:-translate-y-4 hover:shadow-blue-950 hover:shadow-lg rounded-xl
+                    className="mb-4 w-80 h-80 object-cover transition-transform hover:-translate-y-4 hover:shadow-blue-950 hover:shadow-lg rounded-xl
                     "
                     src={data.img}
                     width={220}
                     height={220}
                     alt={data.title}
                   />
-                  <h2 className="text-xl w-36">{data.name}</h2>
+                  <h2 className="text-xl">{data.name}</h2>
                   <p className="font-semibold text-lg text-blue-950">
                     {data.title}
                   </p>
@@ -160,14 +160,14 @@ const Home = () => {
               <div className="mb-7 mx-auto" key={data.id}>
                 <Fade duration={1500} direction="right">
                   <img
-                    className="mb-4 w-full transition-transform hover:-translate-y-4 hover:shadow-blue-950 hover:shadow-lg rounded-xl
+                    className="mb-4 w-80 h-80 object-cover transition-transform hover:-translate-y-4 hover:shadow-blue-950 hover:shadow-lg rounded-xl
                     "
                     src={data.img}
                     width={220}
                     height={220}
                     alt={data.title}
                   />
-                  <h2 className="text-xl w-44">{data.name}</h2>
+                  <h2 className="text-xl">{data.name}</h2>
                   <p className="font-semibold text-lg text-blue-950">
                     {data.title}
                   </p>
