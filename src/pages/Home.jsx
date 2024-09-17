@@ -57,7 +57,7 @@ const Home = () => {
       id: 3,
       img: img2,
       name: "Sensei Niels Thomassen",
-      title: "7th Dan,SKIF DK instructor",
+      title: "7th Dan, SKIF DK instructor",
     },
     {
       id: 4,
